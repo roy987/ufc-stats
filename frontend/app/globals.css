@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ufc-red: #e50914;
+  --ufc-dark-red: #b20710;
+  --ufc-black: #000000;
+  --ufc-dark-gray: #141414;
+  --ufc-gray: #1a1a1a;
+  --ufc-light-gray: #2a2a2a;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ufc-dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ufc-red);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000;
+}
