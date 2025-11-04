@@ -18,7 +18,7 @@ export interface Fighter {
     losses: number;
     draws: number;
   };
-  currentFormRating: number;
+  currentFormRating: number; // 1-10 scale
   nationality: string;
   age: number;
   height: string;

@@ -20,7 +20,7 @@ export default function FighterDetail() {
 
   const fetchFighter = async (id: string) => {
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '';
       const response = await fetch(`${apiUrl}/api/fighters/${id}`);
       if (!response.ok) {
         throw new Error('Fighter not found');
